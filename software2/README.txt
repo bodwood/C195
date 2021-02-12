@@ -32,7 +32,7 @@ JDK Runtime version: 11.0.09 Open JDK 64bit Server powered by JETBRAINS
 Run instructions: Extract the zipfile and load into Intellij. Build and run project.
 
 
-The additional report I have chose to display in the application shows the total number of customer per country, so the company
+The additional report I have chose to display in the application shows the total number of customers per country, so the company
 can get a better idea of where the majority of their customers are located, and adjust appointments and marketing accordingly.
 
 
