@@ -1,0 +1,46 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:controller="View_Controller.LoginController"
+             maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="353.0" style="-fx-background-color: linear-gradient(to bottom,  RoyalBlue, azure); -fx-border-color: white; -fx-border-image-width: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="directionsLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="73.0" prefHeight="53.0" prefWidth="289.0" text="Please enter your username and password to continue" textFill="#4a6b84" wrapText="true">
+            <font>
+                <Font name="SansSerif Italic" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="signInLbl" layoutX="36.0" layoutY="43.0" prefHeight="47.0" prefWidth="126.0" text="Sign In" textFill="#ede8e6">
+            <font>
+                <Font name="SansSerif Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="usernameLbl" layoutX="36.0" layoutY="144.0" text="Username:" textFill="WHITE">
+            <font>
+                <Font name="SansSerif Regular" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="passwordLbl" layoutX="36.0" layoutY="204.0" text="Password:" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameTxtFld" layoutX="36.0" layoutY="170.0" prefHeight="17.0" prefWidth="228.0" style="-fx-background-radius: 5;" />
+        <TextField fx:id="passwordTxtFld" layoutX="36.0" layoutY="227.0" prefHeight="17.0" prefWidth="228.0" style="-fx-background-radius: 5;" />
+        <Label fx:id="connectionLbl" alignment="CENTER" contentDisplay="CENTER" layoutY="363.0" prefHeight="25.0" prefWidth="187.0" text="you are connecting to us from:" textFill="#4a6b84" wrapText="true">
+            <font>
+                <Font name="SansSerif Italic" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="logInBtn" layoutX="215.0" layoutY="266.0" mnemonicParsing="false" onAction="#logInHndlr" prefHeight="32.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="LOG IN" textFill="#6a8bce">
+            <font>
+                <Font name="SansSerif Bold" size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="connectiontxtFld" editable="false" layoutX="175.0" layoutY="364.0" prefHeight="15.0" prefWidth="100.0" style="-fx-background-color: lightgray\;">
+            <font>
+                <Font name="SansSerif Regular" size="12.0" />
+            </font>
+        </TextField>
+        <Button fx:id="exitBtn" layoutX="290.0" layoutY="363.0" mnemonicParsing="false" onAction="#exitBtnHandlr" prefHeight="23.0" prefWidth="60.0" style="-fx-background-radius: 40;" text="exit" textFill="#884545" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.Label?>
+        <?import javafx.scene.effect.DropShadow?>
+        <?import javafx.scene.layout.AnchorPane?>
+        <?import javafx.scene.paint.LinearGradient?>
+        <?import javafx.scene.paint.Stop?>
+        <?import javafx.scene.shape.Ellipse?>
+        <?import javafx.scene.shape.Rectangle?>
+        <?import javafx.scene.text.Font?>
+
+
+        <AnchorPane xmlns="http://javafx.com/javafx"
+                    xmlns:fx="http://javafx.com/fxml"
+                    fx:controller="View_Controller.MainMenuController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="466.0" style="-fx-background-color: white; -fx-border-width: 6; -fx-border-color: #19e6d9;">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" height="187.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="466.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#1deb98" />
+                                <Stop color="#19e6d9" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Ellipse fill="WHITE" layoutX="239.0" layoutY="86.0" radiusX="102.0" radiusY="52.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                    <effect>
+                        <DropShadow color="#b49e9e" />
+                    </effect>
+                </Ellipse>
+                <Label fx:id="welcomeLbl" layoutX="150.0" layoutY="71.0" prefHeight="30.0" prefWidth="177.0" text="Welcome back" textFill="#43e28d">
+                    <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="makeSelectionLbl" alignment="CENTER" layoutX="91.0" layoutY="154.0" prefHeight="16.0" prefWidth="290.0" style="-fx-border-width: .1; -fx-border-radius: 10; -fx-border-color: #a655ac;" text="please select from the following menu options" textFill="#a655ac">
+                    <font>
+                        <Font name="Serif Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="customerButton" alignment="CENTER" graphicTextGap="5.0" layoutX="129.0" layoutY="240.0" mnemonicParsing="false" onAction="#customerButtonHndlr" prefHeight="42.0" prefWidth="217.0" style="-fx-background-color: #1deb98;" text="CUSTOMERS" textAlignment="CENTER" textFill="#f8f8f8">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#7ba791" />
+                    </effect>
+                    <font>
+                        <Font name="SansSerif Bold" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="reportsBttn" alignment="CENTER" graphicTextGap="5.0" layoutX="129.0" layoutY="319.0" mnemonicParsing="false" onAction="#reportsBttnHndlr" prefHeight="42.0" prefWidth="217.0" style="-fx-background-color: #1deb98;" text="REPORTS" textAlignment="CENTER" textFill="#f8f8f8">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#8bb9a2" />
+                    </effect>
+                    <font>
+                        <Font name="SansSerif Bold" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="appointmentsBttn" alignment="CENTER" graphicTextGap="5.0" layoutX="129.0" layoutY="397.0" mnemonicParsing="false" onAction="#appointmentsBttnHndlr" prefHeight="42.0" prefWidth="217.0" style="-fx-background-color: #1deb98;" text="APPOINTMENTS" textAlignment="CENTER" textFill="#f8f8f8">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#83bb9f" />
+                    </effect>
+                    <font>
+                        <Font name="SansSerif Bold" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="exitBttn" alignment="CENTER" graphicTextGap="5.0" layoutX="388.0" layoutY="510.0" mnemonicParsing="false" onAction="#exitBttnHndlr" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #19e6d9; -fx-background-radius: 60;" text="exit" textAlignment="CENTER" textFill="#9e4da6">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#6ebb95" />
+                    </effect>
+                    <font>
+                        <Font name="SansSerif Italic" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
